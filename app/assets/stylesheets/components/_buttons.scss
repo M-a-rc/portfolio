@@ -1,0 +1,19 @@
+.btn-primary{
+  box-shadow: 5px 5px black;
+  transition: all ease-out .15s;
+  border-color: black;
+}
+
+.btn-primary:hover{
+  background-color: $pastel-pink;
+  box-shadow: 10px 10px black;
+  border-color: black;
+  color: black;
+}
+
+#home-call-to-a{
+  scale: 1.5;
+  position: fixed;
+  top: 600px;
+  right: 700px;
+}

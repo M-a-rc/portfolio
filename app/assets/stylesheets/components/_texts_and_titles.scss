@@ -1,0 +1,18 @@
+.typing-zone{
+  font-family: 'M PLUS 1 Code', sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  width: 60vw;
+  text-align: end;
+
+  .typed-cursor{
+    height: 120%;
+  }
+}
+
+.highlight-code{
+  background-color: #D9FEDF;
+  padding: 0px 1%;
+  border-radius: 1%;
+  color: #6F14F5;
+}
