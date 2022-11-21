@@ -1,0 +1,26 @@
+.my-banner-top-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100vh;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+
+  .left-zone{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #home-call-to-a{
+    position: absolute;
+    bottom: 100px;
+  }
+
+  #profile-pic{
+    width: 40%;
+    z-index: -1;
+  }
+}

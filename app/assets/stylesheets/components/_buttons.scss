@@ -2,18 +2,28 @@
   box-shadow: 5px 5px black;
   transition: all ease-out .15s;
   border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-primary:hover{
-  background-color: $pastel-pink;
+  background-color: $foamy;
+  color: $primary-violet;
   box-shadow: 10px 10px black;
   border-color: black;
-  color: black;
+
+  &::before{
+    content: '< ';
+  }
+
+  &::after{
+    content: ' >';
+  }
 }
 
 #home-call-to-a{
-  scale: 1.5;
-  position: fixed;
-  top: 600px;
-  right: 700px;
+  width: 15vw;
+  aspect-ratio: 4/1;
+  font-size: 2em;
 }
