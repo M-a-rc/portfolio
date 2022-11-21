@@ -6,6 +6,7 @@
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
+@import 'aos/dist/aos.css';
 
 // Your CSS partials
 @import "components/index";
@@ -16,4 +17,13 @@ body {
   background-color: #62717D;
   background-color: #FCFCFC;
   color: black;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.link:hover{
+  color: $foamy;
 }

@@ -14,13 +14,26 @@
     justify-content: flex-end;
   }
 
-  #home-call-to-a{
-    position: absolute;
-    bottom: 100px;
-  }
-
   #profile-pic{
     width: 40%;
     z-index: -1;
+  }
+
+  .banner-links{
+    position: absolute;
+    bottom: 100px;
+    width: 15vw ;
+  }
+
+  #banner-links-list{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    padding: 1em 0 0 0;
+    margin-right: 0;
+    color: $primary-violet;
+    margin: 0 0 0 auto
   }
 }

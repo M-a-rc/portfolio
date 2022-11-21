@@ -1,6 +1,7 @@
 .btn-primary{
+  font-family: 'M PLUS 1 Code', sans-serif;
   box-shadow: 5px 5px black;
-  transition: all ease-out .15s;
+  transition: all ease-out .2s;
   border-color: black;
   display: flex;
   justify-content: center;
@@ -25,5 +26,5 @@
 #home-call-to-a{
   width: 15vw;
   aspect-ratio: 4/1;
-  font-size: 2em;
+  font-size: 1em;
 }

@@ -1,7 +1,7 @@
 .typing-zone{
   font-family: 'M PLUS 1 Code', sans-serif;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 2em;
   width: 60vw;
   text-align: end;
 
@@ -11,6 +11,8 @@
 }
 
 .highlight-code{
+  font-family: 'M PLUS 1 Code', sans-serif;
+  display: inline-block;
   background-color: #D9FEDF;
   padding: 0px 1%;
   border-radius: 1%;

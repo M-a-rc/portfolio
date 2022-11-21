@@ -3,15 +3,52 @@
     <div class="left-zone">
       <div class="typing-zone" data-controller="typed">
         <div id="string-element">
-          <p>Bonjour 👋🏼</p>
-          <p>Bonjour, je m'appelle <span class="highlight-code">&ltMarc&gt</span></p>
+          <p>Bonjour 👋</p>
+          <h1>Bonjour, je m'appelle <span class="highlight-code">&ltMarc&gt</span></h1>
           <p>Je suis <span class="highlight-code">&ltdéveloppeur freelance&gt</span></p>
           <p>Contactez-moi pour votre projet de site web !</p>
         </div>
         <span id="typing-text-area"></span>
       </div>
-      <div class="btn btn-primary" id="home-call-to-a">Me contacter</div>
+      <div class="banner-links">
+        <a href="#a-propos"class="btn btn-primary" id="home-call-to-a">En savoir plus</a>
+        <ul id="banner-links-list">
+          <a href="/" class="link"><i class="fa-brands fa-github"></i></a>
+          <a href="/" class="link"><i class="fa-brands fa-linkedin"></i></a>
+        </ul>
+      </div>
     </div>
     <%= image_tag 'profile-pic-(18).jpg', alt: "text", id:"profile-pic" %>
   </div>
+</div>
+
+
+<div class="container">
+
+  <div id="a-propos"data-controller="aos" data-aos="fade-up-left" class="one-image-section">
+    <h2 class="highlight-code">&lt À propos de moi &gt</h2>
+    <div class="one-image-section-content">
+      <%= image_tag 'profile-pic-(18).jpg', alt: "text", class:"section-image" %>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et aut animi? Veritatis dicta sit reprehenderit repudiandae natus, aliquid velit itaque ducimus nesciunt omnis quam earum placeat fuga dolorum delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione blanditiis dicta est? Atque voluptatibus magni totam exercitationem magnam tempora enim cum commodi molestiae sed blanditiis laborum aperiam, cupiditate nihil? <br><br>
+        Ici il y aura un texte super cool <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolore labore vel dolorem doloribus reprehenderit sit in quae consequuntur quidem soluta aspernatur blanditiis consequatur magnam aperiam quia id, maiores delectus.
+        Unde perferendis excepturi, neque iusto repudiandae dolores corporis, recusandae itaque adipisci nesciunt corrupti mollitia voluptates maiores nihil blanditiis non! Dicta aut esse quibusdam odit fugiat obcaecati exercitationem, tempore sunt itaque!
+      </p>
+      </div>
+  </div>
+
+  <div data-controller="aos" data-aos="fade-up-right" class="one-image-section">
+    <h2 class="highlight-code">&lt Ma formation &gt</h2>
+    <div class="one-image-section-content">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et aut animi? Veritatis dicta sit reprehenderit repudiandae natus, aliquid velit itaque ducimus nesciunt omnis quam earum placeat fuga dolorum delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione blanditiis dicta est? Atque voluptatibus magni totam exercitationem magnam tempora enim cum commodi molestiae sed blanditiis laborum aperiam, cupiditate nihil? <br><br>
+        Ici il y aura un texte super cool <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolore labore vel dolorem doloribus reprehenderit sit in quae consequuntur quidem soluta aspernatur blanditiis consequatur magnam aperiam quia id, maiores delectus.
+        Unde perferendis excepturi, neque iusto repudiandae dolores corporis, recusandae itaque adipisci nesciunt corrupti mollitia voluptates maiores nihil blanditiis non! Dicta aut esse quibusdam odit fugiat obcaecati exercitationem, tempore sunt itaque!
+      </p>
+      <%= image_tag 'profile-pic-(18).jpg', alt: "text", class:"section-image" %>
+    </div>
+  </div>
+
 </div>
