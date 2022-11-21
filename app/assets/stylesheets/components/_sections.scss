@@ -8,7 +8,7 @@
   .one-image-section-content{
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   }
 
   p {
@@ -18,8 +18,16 @@
     margin-bottom: 0;
   }
 
-  img{
+  .image-area{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img{
+    width: 100%;
     object-fit: contain;
   }
 }
