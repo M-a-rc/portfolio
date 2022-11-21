@@ -11,7 +11,10 @@
         <span id="typing-text-area"></span>
       </div>
       <div class="banner-links">
-        <a href="#a-propos"class="btn btn-primary" id="home-call-to-a">En savoir plus</a>
+        <div class="d-flex">
+          <a href="#a-propos" class="btn btn-primary" id="home-call-to-a">Mon parcours</a>
+          <a href="#projects" class="btn btn-primary ms-4" id="home-call-to-a">Mes projets</a>
+        </div>
         <ul id="banner-links-list">
           <a href="/" class="link"><i class="fa-brands fa-github"></i></a>
           <a href="/" class="link"><i class="fa-brands fa-linkedin"></i></a>
@@ -56,8 +59,8 @@
 </div>
 
 <div class="bg-gray pb-5" data-controller="aos" data-aos="fade-up-left">
-  <h2 class="color-violet h2-break">&lt Mes projets &gt</h2>
-  <div class="one-image-section w-95 bg-white">
+  <h2 id="projects"class="color-violet h2-break">&lt Mes projets &gt</h2>
+  <div class="one-image-section w-95 bg-white project-section">
     <h2 class="highlight-code">&lt Valentin(e).fr &gt Opticiens Lunettiers</h2>
     <div class="one-image-section-content">
       <p>
@@ -68,23 +71,46 @@
       </p>
       <div class='image-area'>
         <%= image_tag 'Valentine-logo.png', alt: "text", class:"w-50" %>
-        <%= image_tag 'profile-pic-(18).jpg', alt: "text", class:"section-image" %>
+        <%= render 'carousel', carousel_id: 'carousel-1', image_1: 'valentine-1.png', image_2: 'valentine-2.png', image_3: 'valentine-3.png' %>
       </div>
     </div>
   </div>
 </div>
 
-<div data-controller="aos" data-aos="fade-up-right" class="one-image-section bg-gray mt-0">
-  <h2 class="highlight-code">&lt Eligia.fr &gt simplification des démarches du deuil </h2>
-  <div class="one-image-section-content">
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et aut animi? Veritatis dicta sit reprehenderit repudiandae natus, aliquid velit itaque ducimus nesciunt omnis quam earum placeat fuga dolorum delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione blanditiis dicta est? Atque voluptatibus magni totam exercitationem magnam tempora enim cum commodi molestiae sed blanditiis laborum aperiam, cupiditate nihil? <br><br>
-      Ici il y aura un texte super cool <br><br>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolore labore vel dolorem doloribus reprehenderit sit in quae consequuntur quidem soluta aspernatur blanditiis consequatur magnam aperiam quia id, maiores delectus.
-      Unde perferendis excepturi, neque iusto repudiandae dolores corporis, recusandae itaque adipisci nesciunt corrupti mollitia voluptates maiores nihil blanditiis non! Dicta aut esse quibusdam odit fugiat obcaecati exercitationem, tempore sunt itaque!
-    </p>
-    <div class='image-area'>
-      <%= image_tag 'profile-pic-(18).jpg', alt: "text", class:"section-image" %>
+<div class="bg-gray pb-5" data-controller="aos" data-aos="fade-up-right">
+  <div class="one-image-section w-95 bg-white roject-section mt-0">
+    <h2 class="highlight-code">&lt eligia.fr &gt simplification des démarches du deuil</h2>
+    <div class="one-image-section-content">
+      <div class='image-area'>
+        <%= image_tag 'eligia-sans-fond-vecto.svg', alt: "text", class:"w-50" %>
+        <%= render 'carousel', carousel_id: 'carousel-2', image_1: 'eligia-1.png', image_2: 'eligia-2.png', image_3: 'eligia-3.png' %>
+      </div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et aut animi? Veritatis dicta sit reprehenderit repudiandae natus, aliquid velit itaque ducimus nesciunt omnis quam earum placeat fuga dolorum delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione blanditiis dicta est? Atque voluptatibus magni totam exercitationem magnam tempora enim cum commodi molestiae sed blanditiis laborum aperiam, cupiditate nihil? <br><br>
+        Ici il y aura un texte super cool <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolore labore vel dolorem doloribus reprehenderit sit in quae consequuntur quidem soluta aspernatur blanditiis consequatur magnam aperiam quia id, maiores delectus.
+        Unde perferendis excepturi, neque iusto repudiandae dolores corporis, recusandae itaque adipisci nesciunt corrupti mollitia voluptates maiores nihil blanditiis non! Dicta aut esse quibusdam odit fugiat obcaecati exercitationem, tempore sunt itaque!
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray pb-5" data-controller="aos" data-aos="fade-up-left">
+  <div class="one-image-section w-95 bg-white project-section mt-0">
+    <h2 class="highlight-code">&lt Populum &gt Démocratie participative</h2>
+    <div class="one-image-section-content">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et aut animi? Veritatis dicta sit reprehenderit repudiandae natus, aliquid velit itaque ducimus nesciunt omnis quam earum placeat fuga dolorum delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione blanditiis dicta est? Atque voluptatibus magni totam exercitationem magnam tempora enim cum commodi molestiae sed blanditiis laborum aperiam, cupiditate nihil? <br><br>
+        Ici il y aura un texte super cool <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolore labore vel dolorem doloribus reprehenderit sit in quae consequuntur quidem soluta aspernatur blanditiis consequatur magnam aperiam quia id, maiores delectus.
+        Unde perferendis excepturi, neque iusto repudiandae dolores corporis, recusandae itaque adipisci nesciunt corrupti mollitia voluptates maiores nihil blanditiis non! Dicta aut esse quibusdam odit fugiat obcaecati exercitationem, tempore sunt itaque!
+      </p>
+      <div class='image-area'>
+        <div class="w-50">
+          <%# <%= image_tag 'Populum.png', alt: "text", class:"w-50" %>
+          <%= render 'carousel', carousel_id: 'carousel-3', image_1: 'populum-1.png', image_2: 'populum-2.png', image_3: 'populum-3.png' %>
+        </div>
+      </div>
     </div>
   </div>
 </div>

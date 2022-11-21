@@ -18,3 +18,26 @@
   width: 95%;
   margin: 0 auto;
 }
+
+
+.carousel-btn{
+ color: $primary-violet;
+ font-size: 2em;
+ padding: 1em;
+}
+
+
+.carousel, .carousel-inner{
+  height: 100%;
+}
+
+.carousel-item{
+  height: 75%;
+  height: 50vh;
+
+  .img{
+    object-fit: contain;
+    height: 100%;
+    aspect-ratio: 2/1;
+  }
+}

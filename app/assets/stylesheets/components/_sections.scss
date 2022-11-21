@@ -19,7 +19,7 @@
   }
 
   .image-area{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,4 +30,9 @@
     width: 100%;
     object-fit: contain;
   }
+}
+
+
+.project-section{
+  height: 95vh;
 }
