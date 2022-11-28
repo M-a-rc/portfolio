@@ -32,6 +32,24 @@
   }
 }
 
+@media(max-width: 768px){
+  .one-image-section{
+
+    .one-image-section-content{
+      flex-direction: column;
+      padding: 8px;
+    }
+
+    .section-text-area, .section-image-area{
+      width: 100%;
+    }
+
+    .section-image{
+      padding-bottom: 2em;
+    }
+  }
+}
+
 
 .project-section{
   margin: 0 auto;

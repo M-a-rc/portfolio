@@ -35,4 +35,63 @@
     color: $primary-violet;
     margin: 0 0 0 auto
   }
+
+  .typing-zone{
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    width: 60vw;
+    text-align: end;
+
+    .typed-cursor{
+      height: 120%;
+    }
+  }
+
+  #home-call-to-a{
+    width: 15vw;
+    aspect-ratio: 4/1;
+    font-size: 1em;
+  }
+}
+
+
+@media(max-width: 768px){
+  .my-banner-top-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .left-zone{
+      margin: 0 auto;
+      justify-content: center;
+      width: 90%;
+    }
+
+    #profile-pic{
+      position: relative;
+      bottom: 20vh;
+    }
+
+    .typing-zone{
+      font-weight: 400;
+      font-size: 24px;
+      width: 80vw;
+      text-align: start;
+    }
+
+    .banner-links{
+      margin: 0 auto;
+      bottom: 5vh;
+    }
+
+    #home-call-to-a{
+      width: 35vw;
+    }
+
+    #banner-links-list{
+      margin: 0 auto;
+    }
+  }
 }

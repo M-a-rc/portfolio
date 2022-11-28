@@ -25,3 +25,15 @@
  font-size: 2em;
  padding: 1em;
 }
+
+@media(min-width: 768px){
+  .only-mobile{
+    display: none;
+  }
+}
+
+@media(max-width: 768px){
+  .only-desktop{
+    display: none;
+  }
+}
