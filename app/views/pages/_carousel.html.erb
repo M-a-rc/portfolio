@@ -1,4 +1,4 @@
-<div id="<%= carousel_id%>" class="carousel slide" data-bs-ride="carousel">
+<div id="<%= carousel_id%>" class="carousel slide project-carousel <%= defined?(mobile) ? 'portrait' : 'landscape' %>" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <%= image_tag image_1, alt: "text", class:"carousel-image" %>
