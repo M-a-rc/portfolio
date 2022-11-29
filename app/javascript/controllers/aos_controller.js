@@ -8,7 +8,8 @@ export default class extends Controller {
     AOS.init({
       // offset: 200,
       delay: 100,
-      duration: 700
+      duration: 700,
+      disable: 'mobile'
     })
   }
 }

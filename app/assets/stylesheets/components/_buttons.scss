@@ -1,4 +1,4 @@
-.btn-primary{
+.btn{
   font-family: 'M PLUS 1 Code', sans-serif;
   box-shadow: 5px 5px black;
   transition: all ease-out .2s;
@@ -8,17 +8,39 @@
   align-items: center;
 }
 
-.btn-primary:hover{
-  background-color: $foamy;
-  color: $primary-violet;
-  box-shadow: 10px 10px black;
-  border-color: black;
+.btn-success{
+  color: white;
+}
 
-  &::before{
-    content: '< ';
+@media(min-width: 769){
+
+  .btn-primary:hover{
+    background-color: $foamy;
+    color: $primary-violet;
+    box-shadow: 10px 10px black;
+    border-color: black;
+
+    &::before{
+      content: '< ';
+    }
+
+    &::after{
+      content: ' >';
+    }
   }
 
-  &::after{
-    content: ' >';
+  .btn-success:hover{
+    background-color: $foamy;
+    color: $primary-violet;
+    box-shadow: 10px 10px black;
+    border-color: black;
+
+    &::before{
+      content: '< ';
+    }
+
+    &::after{
+      content: ' >';
+    }
   }
 }

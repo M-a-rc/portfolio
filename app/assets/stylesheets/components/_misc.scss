@@ -28,12 +28,20 @@
 
 @media(min-width: 768px){
   .only-mobile{
-    display: none;
+    display: none !important;
   }
 }
 
 @media(max-width: 768px){
   .only-desktop{
-    display: none;
+    display: none !important;
+  }
+}
+
+
+@media(max-width: 768px){
+  .modal{
+    width: 100vw;
+    margin: 0 auto;
   }
 }

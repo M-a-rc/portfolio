@@ -11,9 +11,10 @@
         <span id="typing-text-area"></span>
       </div>
       <div class="banner-links">
-        <div class="d-flex">
+        <div class="banner-btns">
           <a href="#a-propos" class="btn btn-primary" id="home-call-to-a">Mon parcours</a>
-          <a href="#projects" class="btn btn-primary ms-4" id="home-call-to-a">Mes projets</a>
+          <a href="#projects" class="btn btn-primary" id="home-call-to-a">Mes projets</a>
+          <button id="home-call-to-a" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Me contacter</button>
         </div>
         <ul id="banner-links-list">
           <a href="/" class="link"><i class="fa-brands fa-github"></i></a>
@@ -27,8 +28,8 @@
 
 
 <div class="container">
-  <div id="a-propos"data-controller="aos" data-aos="fade-up-left" class="one-image-section">
-    <h2 class="highlight-code">&lt À propos de moi &gt</h2>
+  <div data-controller="aos" data-aos="fade-up-left" class="one-image-section">
+    <h2 id="a-propos" class="highlight-code">&lt À propos de moi &gt</h2>
     <div class="one-image-section-content">
       <div class='section-image-area'>
         <%= image_tag '107.png', alt: "text", class:"section-image" %>
@@ -47,7 +48,7 @@
   <div data-controller="aos" data-aos="fade-up-right" class="one-image-section">
     <h2 class="highlight-code">&lt Ma formation &gt</h2>
     <div class="one-image-section-content">
-      <div class='section-image-area'>
+      <div class='section-image-area only-mobile'>
         <%= image_tag '28.png', alt: "text", class:"section-image only-mobile" %>
       </div>
       <div class="section-text-area">
@@ -118,6 +119,29 @@
       <div class='project-image-area'>
         <%= image_tag 'Populum.png', alt: "text", class:"project-logo" %>
         <%= render 'carousel', carousel_id: 'carousel-3', image_1: 'populum-1.png', image_2: 'populum-2.png', image_3: 'populum-3.png', mobile: true %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contactModalLabel">Informations de contact</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul style="list-style: none">
+          <li>
+            <i class="fa-solid fa-phone color-violet"></i> : +33 6 27 99 73 23
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope color-violet"></i> : marc.delesalle.tech@gmail.com
+          </li>
+        </ul>
       </div>
     </div>
   </div>

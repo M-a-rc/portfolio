@@ -93,6 +93,35 @@
   }
 }
 
+@media(max-width: 768px){
+  .project-section{
+    height: auto;
+
+    h2{
+      text-align: center;
+    }
+
+    .project-content{
+      flex-direction: column;
+      padding: 8px;
+    }
+
+    .project-text-area {
+      width: 100%;
+      padding-top: 1em;
+    }
+
+    .project-image-area {
+      width: 100%;
+    }
+
+    .project-logo{
+      width: 50%;
+    }
+  }
+}
+
+
 .project-carousel.landscape{
   width: 90%;
   height: fit-content;
@@ -135,5 +164,11 @@
     height: 100%;
     object-fit: contain;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 768px){
+  .project-carousel.portrait{
+    height: 80vh;
   }
 }

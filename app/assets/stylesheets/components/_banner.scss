@@ -24,6 +24,14 @@
     bottom: 100px;
   }
 
+  .banner-btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+
   #banner-links-list{
     width: 40%;
     display: flex;
@@ -71,7 +79,7 @@
 
     #profile-pic{
       position: relative;
-      bottom: 20vh;
+      bottom: 30vh;
     }
 
     .typing-zone{
@@ -79,6 +87,8 @@
       font-size: 24px;
       width: 80vw;
       text-align: start;
+      position: relative;
+      bottom: 15vh;
     }
 
     .banner-links{
